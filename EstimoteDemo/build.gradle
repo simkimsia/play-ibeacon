@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 19
+    }
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:+'
+    dependencies {
+        compile files('C:/Users/Lenovo/AndroidStudioProjects/EstimoteDemoProject/EstimoteDemo/libs/estimote-sdk-preview.jar', 'C:/Users/Lenovo/AndroidStudioProjects/EstimoteDemoProject/EstimoteDemo/libs/guava-15.0.jar')
+    }
+}
